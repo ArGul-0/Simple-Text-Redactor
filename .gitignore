@@ -1,0 +1,14 @@
+# Build
+bin/
+obj/
+
+# IDE
+.idea/
+.vs/
+
+# User
+*.user
+*.suo
+
+# Logs
+*.log
