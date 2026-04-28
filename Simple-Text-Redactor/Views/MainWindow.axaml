@@ -19,7 +19,7 @@
     <Grid>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center"
                     Spacing="5">
-            <Button Content="New File"
+            <Button Content="New File" Command="{Binding OpenRedactorCommand}"
                     Width="100"
                     HorizontalContentAlignment="Center"></Button>
             <Button Content="Open File"
