@@ -7,5 +7,6 @@
         x:Class="Simple_Text_Redactor.Views.RedactorWindow"
         x:DataType="vm:RedactorViewModel"
         Title="Simple Text Redactor">
+    
     <TextBlock Text="{Binding Test}"></TextBlock>
 </Window>
