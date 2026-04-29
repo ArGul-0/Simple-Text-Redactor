@@ -8,5 +8,15 @@
         x:DataType="vm:RedactorViewModel"
         Title="Simple Text Redactor">
     
-    <TextBlock Text="{Binding Test}"></TextBlock>
+    <Grid RowDefinitions="Auto, *"
+          ShowGridLines="True"> <!-- For debug -->
+        <Menu>
+            <MenuItem Header="_File">
+                <MenuItem Header="_New"></MenuItem>
+                <MenuItem Header="_Open"></MenuItem>
+                <MenuItem Header="_Close"></MenuItem>
+            </MenuItem>
+        </Menu>
+        
+    </Grid>
 </Window>
