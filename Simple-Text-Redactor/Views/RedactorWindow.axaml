@@ -9,20 +9,21 @@
         x:DataType="vm:RedactorViewModel"
         Title="Simple Text Redactor">
     
-    <Grid RowDefinitions="Auto, *"
+    <Grid RowDefinitions="Auto, *" Background="{DynamicResource PrimaryBackground}"
           ShowGridLines="True"> <!-- For debug -->
         <Menu>
             <MenuItem Header="_File">
-                <MenuItem Header="_New"></MenuItem>
-                <MenuItem Header="_Open"></MenuItem>
-                <MenuItem Header="_Close"></MenuItem>
+                <MenuItem Header="_New" Foreground="{DynamicResource PrimaryText}"></MenuItem>
+                <MenuItem Header="_Open" Foreground="{DynamicResource PrimaryText}"></MenuItem>
+                <MenuItem Header="_Close" Foreground="{DynamicResource PrimaryText}"></MenuItem>
             </MenuItem>
         </Menu>
         
         <TextBox Grid.Row="1" 
                  HorizontalAlignment="Stretch"
                  VerticalAlignment="Stretch"
-                 Margin="10">
+                 Margin="10"
+                 Foreground="{DynamicResource PrimaryText}">
             
         </TextBox>
     </Grid>

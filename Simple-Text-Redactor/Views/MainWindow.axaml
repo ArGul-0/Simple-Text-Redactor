@@ -16,15 +16,17 @@
         <vm:MainWindowViewModel/>
     </Design.DataContext>
     
-    <Grid>
+    <Grid Background="{DynamicResource PrimaryBackground}">
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center"
                     Spacing="5">
             <Button Content="New File" Command="{Binding OpenRedactorCommand}"
                     Width="100"
-                    HorizontalContentAlignment="Center"></Button>
+                    HorizontalContentAlignment="Center"
+                    Foreground="{DynamicResource PrimaryText}"></Button>
             <Button Content="Open File"
                     Width="100"
-                    HorizontalContentAlignment="Center"></Button>
+                    HorizontalContentAlignment="Center"
+                    Foreground="{DynamicResource PrimaryText}"></Button>
         </StackPanel>
     </Grid>
 
