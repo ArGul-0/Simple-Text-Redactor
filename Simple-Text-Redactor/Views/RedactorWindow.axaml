@@ -19,5 +19,11 @@
             </MenuItem>
         </Menu>
         
+        <TextBox Grid.Row="1" 
+                 HorizontalAlignment="Stretch"
+                 VerticalAlignment="Stretch"
+                 Margin="10">
+            
+        </TextBox>
     </Grid>
 </Window>
