@@ -1,19 +1,20 @@
-﻿using System;
-using CommunityToolkit.Mvvm.Input;
-using Simple_Text_Redactor.Views;
+﻿using CommunityToolkit.Mvvm.Input;
+using Simple_Text_Redactor.Application.Services;
 
 namespace Simple_Text_Redactor.ViewModels;
 
 public partial class MainWindowViewModel : ViewModelBase
 {
-    public event Action? RequestClose;
+    private readonly IWindowService windowService;
+
+    public MainWindowViewModel(IWindowService windowService)
+    {
+        this.windowService = windowService;
+    }
     
     [RelayCommand]
     private void OpenRedactor()
     {
-        RedactorWindow window = new RedactorWindow();
-        window.Show();
-        
-        RequestClose?.Invoke();
+        windowService.OpenRedactorWindow();
     }
 }
